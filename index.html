@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Daily Planner</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="planner">
+
+        <!-- HEADER -->
+        <header>
+         <!-- WEEKLY OVERVIEW -->
+
+<section class="weekly-overview">
+
+    <div class="weekly-title">
+        <h2>WEEKLY OVERVIEW:</h2>
+
+        <button id="today-button">Today</button>
+    </div>
+
+    <div id="week-container"></div>
+
+</section>
+<!-- STREAK -->
+
+<section class="streak-box">
+
+    <div class="streak-icon">🔥</div>
+
+    <div>
+        <h2 id="streak-count">0 DAY STREAK</h2>
+        <p id="streak-message">Start your productive streak today!</p>
+    </div>
+
+</section>
+            <h1>DAILY PLAN</h1>
+
+            <div class="date">
+                <label>DATE:</label>
+                <input type="date" id="date">
+            </div>
+            <button id="theme-toggle">🌙 Dark Mode</button>
+        </header>
+
+
+        <!-- MAIN CONTENT -->
+        <main>
+
+            <!-- SCHEDULE -->
+            <section class="schedule-section">
+
+                <h2>SCHEDULE:</h2>
+
+                <div class="schedule">
+
+                    <div class="time-row">
+                        <span>5:00am</span>
+                        <input type="text">
+                    </div>
+
+                    <div class="time-row">
+                        <span>6:00am</span>
+                        <input type="text">
+                    </div>
+
+                    <div class="time-row">
+                        <span>7:00am</span>
+                        <input type="text">
+                    </div>
+
+                    <div class="time-row">
+                        <span>8:00am</span>
+                        <input type="text">
+                    </div>
+
+                    <div class="time-row">
+                        <span>9:00am</span>
+                        <input type="text">
+                    </div>
+
+                    <div class="time-row">
+                        <span>10:00am</span>
+                        <input type="text">
+                    </div>
+
+                    <div class="time-row">
+                        <span>11:00am</span>
+                        <input type="text">
+                    </div>
+
+                    <div class="time-row">
+                        <span>12:00pm</span>
+                        <input type="text">
+                    </div>
+
+                    <div class="time-row">
+                        <span>1:00pm</span>
+                        <input type="text">
+                    </div>
+
+                    <div class="time-row">
+                        <span>2:00pm</span>
+                        <input type="text">
+                    </div>
+
+                    <div class="time-row">
+                        <span>3:00pm</span>
+                        <input type="text">
+                    </div>
+
+                    <div class="time-row">
+                        <span>4:00pm</span>
+                        <input type="text">
+                    </div>
+
+                    <div class="time-row">
+                        <span>5:00pm</span>
+                        <input type="text">
+                    </div>
+
+                    <div class="time-row">
+                        <span>6:00pm</span>
+                        <input type="text">
+                    </div>
+
+                    <div class="time-row">
+                        <span>7:00pm</span>
+                        <input type="text">
+                    </div>
+
+                    <div class="time-row">
+                        <span>8:00pm</span>
+                        <input type="text">
+                    </div>
+
+                    <div class="time-row">
+                        <span>9:00pm</span>
+                        <input type="text">
+                    </div>
+
+                    <div class="time-row">
+                        <span>10:00pm</span>
+                        <input type="text">
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- RIGHT SIDE -->
+            <section class="right-side">
+
+                <!-- TODO -->
+                <div class="box">
+
+                    <h2>TO DO:</h2>
+
+                   <div id="todo-list">
+
+    <div class="todo-item">
+        <input type="checkbox">
+        <input type="text" placeholder="Add a task...">
+        <button class="delete">×</button>
+    </div>
+
+    <div class="todo-item">
+        <input type="checkbox">
+        <input type="text" placeholder="Add a task...">
+        <button class="delete">×</button>
+    </div>
+
+    <div class="todo-item">
+        <input type="checkbox">
+        <input type="text" placeholder="Add a task...">
+        <button class="delete">×</button>
+    </div>
+
+    <div class="todo-item">
+        <input type="checkbox">
+        <input type="text" placeholder="Add a task...">
+        <button class="delete">×</button>
+    </div>
+
+    <div class="todo-item">
+        <input type="checkbox">
+        <input type="text" placeholder="Add a task...">
+        <button class="delete">×</button>
+    </div>
+
+    <div class="todo-item">
+        <input type="checkbox">
+        <input type="text" placeholder="Add a task...">
+        <button class="delete">×</button>
+    </div>
+
+</div>
+
+                    <button id="add-task">+ Add Task</button>
+                    <div class="progress-box">
+
+    <div class="progress-header">
+        <h3>TODAY'S PROGRESS</h3>
+        <span id="progress-percent">0%</span>
+    </div>
+
+    <div class="progress-bar">
+        <div id="progress-fill"></div>
+    </div>
+
+    <p id="progress-text">0 / 6 tasks completed</p>
+
+</div>
+
+                </div>
+
+
+                <!-- PRIORITIES -->
+                <div class="box">
+
+                    <h2>PRIORITIES:</h2>
+
+                    <div class="priority">
+                        <input type="checkbox">
+                        <input type="text">
+                    </div>
+
+                    <div class="priority">
+                        <input type="checkbox">
+                        <input type="text">
+                    </div>
+
+                    <div class="priority">
+                        <input type="checkbox">
+                        <input type="text">
+                    </div>
+
+                    <div class="priority">
+                        <input type="checkbox">
+                        <input type="text">
+                    </div>
+
+                </div>
+
+
+                <!-- NOTES -->
+                <div class="box">
+
+                    <h2>NOTES:</h2>
+
+                    <textarea
+                        id="notes"
+                        placeholder="Write your notes here..."
+                    ></textarea>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <footer>
+            ✦ PLAN YOUR DAY • FOCUS ON WHAT MATTERS ✦
+        </footer>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
